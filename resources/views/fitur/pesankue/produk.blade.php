@@ -1,19 +1,7 @@
-@extends('layouts.master')
-@section('header')
-    <nav id="navbar" class="navbar">
-            <ul>
-            <li><a class="nav-link" href="{{ url('/')}}">Home</a></li>
-            
-            <li><a class="nav-link" href="{{ url('supplier')}}">Supplier</a></li>
-            <li><a class="nav-link" href="{{ url('pelanggan')}}">Pelanggan</a></li>
-            <li><a class="nav-link" href="{{ url('pegawai')}}">Pegawai</a></li>
-            <li><a class="nav-link scrollto" href="{{ url('contact')}}">Contact</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
-@endsection
-
+@extends('layouts.user.master')
+ 
 @section('content')
+
 <section id="why-us" class="why-us">
         <div class="container">
             <div class="section-title">
@@ -43,4 +31,4 @@
         </div>
         </section>
 
-@endsection
+  @endsection
