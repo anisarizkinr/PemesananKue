@@ -3,6 +3,8 @@
 @section('content')
 
 <section id="why-us" class="why-us">
+        <div class="carousel-item active">
+        <div class="carousel-container">
         <div class="container">
             <div class="section-title">
                 <span>Barang</span>
@@ -28,6 +30,8 @@
 
             </div>
             
+        </div>
+            </div>
         </div>
         </section>
 
