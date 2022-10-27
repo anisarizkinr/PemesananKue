@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Models\Produk;
 
 class ProdukKueController extends Controller
 {
@@ -11,16 +12,23 @@ class ProdukKueController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function produk(){
-        return view('fitur.pesankue.produk', 
-        ['title'=> 'Produk Kue Panti Asuhan Putri Aisyiyah']);
-    }
+    // public function produk(){
+    //     return view('fitur.pesankue.produk', 
+    //     ['title'=> 'Produk Kue Panti Asuhan Putri Aisyiyah']);
+    // }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        //
+        $data = produk::all();
+        return view('produk', ['active'=>'active', 'title'=>'produk'], compact('data'));
+    }
+
     public function create()
     {
         //
